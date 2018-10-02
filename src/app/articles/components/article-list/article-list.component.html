@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let article of articles$ | async">
+    {{ article.name }}
+  </li>
+</ul>
+<p>Articles json format</p>
+<pre>{{  articles$ |async | json }}</pre>
